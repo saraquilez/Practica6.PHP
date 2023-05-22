@@ -1,0 +1,64 @@
+<!-- SARA QUÍLEZ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 6. PHP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="group">
+
+<form method="POST" action="submit.php"  class="formulario" id="formulario">
+    <h1><em>Formulario de Registro</em></h1>
+
+                <!-- NOMBRE -->
+                <div class="estado_campo" id="campo_nombre">
+                    <label class="label" for="nombre">Nombre: <span><em>(requerido)</em></span></label><br/> 
+                    <div class="grupo_input">
+                        <input type="text" class="input" name="nombre" id="nombre" value="" required/>
+                        <img class="imagen_error" src="images/error-icon.svg" alt="Icono nombre incorrecto" id="nombre_incorrecto">
+                        <img class="imagen_correcto" src="images/success-icon.svg" alt="Icono nombre correcto" id="nombre_correcto">
+                    <p class="rellene_campo" id="rellene_nombre">Rellene este campo.</p>
+                    <p class="formato_error" id="formato_nombre">Formato inválido.</p>
+                </div>
+                </div>
+                
+                <!-- APELLIDO -->
+                <div class="estado_campo" id="campo_apellido">
+                    <label class="label" for="apellido">Apellido: <span><em>(requerido)</em></span></label><br/> 
+                    <div class="grupo_input">
+                        <input type="text" class="input" name="apellido" id="apellido" value="" required/>
+                        <img class="imagen_error" src="images/error-icon.svg" alt="Icono apellido incorrecto" id="apellido_incorrecto">
+                        <img class="imagen_correcto" src="images/success-icon.svg" alt="Icono apellido correcto" id="apellido_correcto">
+                    <p class="rellene_campo" id="rellene_apellido">Rellene este campo.</p>
+                    <p class="formato_error" id="formato_apellido">Formato inválido.</p>
+                    </div>
+                </div>
+                
+                <!-- EMAIL -->
+                <div class="estado_campo" id="campo_email">
+                    <label class="label" for="email">Email: <span><em>(requerido)</em></span></label><br/> 
+                    <div class="grupo_input">
+                        <input type="email" class="input" name="email" id="email" value="" required/>
+                        <img class="imagen_error" src="images/error-icon.svg" alt="Icono email incorrecto" id="email_incorrecto">
+                        <img class="imagen_correcto" src="images/success-icon.svg" alt="Icono email correcto" id="email_correcto">
+                    <p class="rellene_campo" id="rellene_email">Rellene este campo.</p>
+                    <p class="formato_error" id="formato_email">Formato inválido.</p>
+                    </div>
+                </div>
+                
+                
+                <!-- SUSCRIBIRSE -->
+                <div>
+                    <button class="estado_campo boton" type="submit" name="submit" value="Suscribirse">Suscribirse</button>
+                </div>
+    </form>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

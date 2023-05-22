@@ -1,0 +1,129 @@
+/* SARA QUÍLEZ */
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6fcff;
+    margin: 0;
+    padding: 0;
+}
+  
+.formulario {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+  
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #429dd5;
+    text-shadow: 2px 2px 4px rgba(81, 81, 81, 0.317);
+}
+  
+.label {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+  
+.grupo_input {
+    position: relative;
+    margin-bottom: 20px;
+}
+  
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+    
+.boton {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #75aee3;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(2, 0, 102, 0.342);
+}
+  
+.boton:hover {
+    background-color: #429dd5;
+}
+  
+.rellene_campo  {
+    opacity: 0;
+    position: absolute;
+    right: 240px;
+    top: 30px;
+    z-index: 100;
+    color:  #d07c81;
+    font-size: 12px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.rellene_campo-activo  {
+    opacity: 1;
+}
+
+.formato_error  {
+    color:  #d07c81;
+    font-size: 12px;
+    opacity: 0;
+    position: absolute;
+    right: 256px;
+    top: 30px;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.formato_error-activo  {
+    opacity: 1;
+}
+
+.imagen_correcto{
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.imagen_error{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    opacity:0;
+}
+
+.estado_campo-correcto{
+    opacity: 1;
+}
+
+.estado_campo-incorrecto{
+    opacity: 1; 
+    border: 2px solid #d07c81 ; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.imagen_error{
+    border: 0px;
+}
+      
+      
+  
